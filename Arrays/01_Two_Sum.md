@@ -37,3 +37,4 @@ Output: Because nums[0] + nums[1] == 9, we return [0, 1].
                seen[value] = i  
 ```
 
+[Leetcode Original](https://leetcode.com/problems/two-sum)
