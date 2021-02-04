@@ -13,18 +13,6 @@ Explanation: The above elevation map (black section) is represented by array [0,
 
 ## Solution: 
 
-    # set pointers at 0 and -1
-    # set max_left and max_right values at zero to keep track
-    #   of the max values coming from the left and the right sides
-    # while pointers haven't crossed, iterate
-    # check which pointer represents smaller value
-    # in case if they're equal decide which part to move
-    # in case they are different:
-    #   for the smaller value:
-    #   -- if the value is less than its side's (left or right) maximum = { max_<side> - current value }
-    #   -- else: { max_<side> = max(current value, max_left) }
-    #   move the pointer --> or <--
-
 > ✏️ Pseudocode:
 1. Set two pointers at the very sides of the array: 0 and -1
 2. We need the following containers  
