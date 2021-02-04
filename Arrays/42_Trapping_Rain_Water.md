@@ -20,8 +20,9 @@ Explanation: The above elevation map (black section) is represented by array [0,
     2. container for collected water (this is our return val) 
 3. Iterate while two pointers haven't crossed:
 * find which pointer's value is smaller and compare it to the corresponing side's max_height (max_left or max_right)
-* if the value is less than side's max height, update the water container with side's max height - pointer's value
-* if side's max height is smaller than pointer's value, update side's max height to the value of that pointer
+* if the value is less than side's max height, update the water container with side's max height - pointer's value, 
+* if side's max height is smaller than pointer's value, update side's max height to the value of that pointer, 
+* depending on which side -- left or right -- it is, increase or decrease the pointer so that we're moving inwards (towards the middle of the array)
 
 > 👩🏼‍💻 Code
 
